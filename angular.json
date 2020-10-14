@@ -123,6 +123,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "dg-movie-mock"
+    }
+  },
+  "defaultProject": "dg-movie-mock",
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "sass"
+    }
+  }
 }
