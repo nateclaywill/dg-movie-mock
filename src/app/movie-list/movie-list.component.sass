@@ -1,0 +1,38 @@
+.button
+  padding: 0.5rem 1rem
+  border: 1px solid #C2CAD0
+
+  &:active, &:focus
+    outline: none
+
+.toggle-button
+  background: #F7F8F9
+  border-left: none
+  transition: background 0.3s
+
+  &:hover
+    background: darken(#F7F8F9, 10%)
+    cursor: pointer
+
+  &.button-active
+    color: #fff
+    background-color: #1A72B0
+
+  &:first-of-type
+    border-bottom-right-radius: 4px
+    border-top-right-radius: 4px
+
+  &:last-of-type
+    border-left: 1px solid #C2CAD0
+    border-bottom-left-radius: 4px
+    border-top-left-radius: 4px
+
+.years
+  display: flex
+  flex-direction: row-reverse
+
+.movie-list
+  margin-top: 1em
+  display: flex
+  flex-direction: column
+  align-items: center

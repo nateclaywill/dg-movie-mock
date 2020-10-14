@@ -1,0 +1,12 @@
+<div class="years">
+  <button *ngFor="let decade of decades" class="button toggle-button" (click)="filterByDecade(decade)"
+    [ngClass]="selectedDecade === decade ? 'button-active' : ''">
+    {{ decade }}'s
+  </button>
+</div>
+
+<div class="movie-list" *ngIf="filteredMovies">
+  <div *ngFor="let movie of filteredMovies">
+    <app-movie class="movie-container" [imdbID]="movie.imdbID"></app-movie>
+  </div>
+</div>
